@@ -10,13 +10,11 @@ curl -L https://storage.googleapis.com/concord-libs/cityhash-1.1.1.tar.gz | tar 
 
 cd cityhash-1.1.1
 
-./configure --prefix=$DIR/toor
+./configure --prefix=$DIR/toor/usr
 
 make && make install
 
 cd $DIR/toor
-
-echo $ORIGINAL_DIR IS MY PWD
 
 echo fpm -a x86_64 --category misc -t deb -s dir \
   -v 1.1.1 -n cityhash-dev \
