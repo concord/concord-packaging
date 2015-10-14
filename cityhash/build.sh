@@ -2,7 +2,7 @@
 
 ORIGINAL_DIR="$(pwd)"
 DIR="$(mktemp -d)"
-mkdir $DIR/toor
+mkdir -p $DIR/toor/usr
 
 cd $DIR
 
